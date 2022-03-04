@@ -1,0 +1,27 @@
+GET http://localhost:3000/users
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name" : "example",
+    "email": "name@example.com"
+}
+
+###
+
+GET http://localhost:3000/users/61f8efbbe61c6a022cc34bff
+
+
+###
+
+PATCH http://localhost:3000/users/61f8efbbe61c6a022cc34bff
+Content-Type: application/json
+
+{
+    "name": "new name",
+    "email": "new@example.com"
+}
+
